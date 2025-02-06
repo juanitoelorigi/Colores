@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colores</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <p class="titleG">Prueba De HSV Con imagenes</p>
+    <br />
+    <div class="qr-container">
+      <div id="qrcode"></div>
+    </div>
+    <form class="form">
+      <p class="heading">
+        Al momento de ingresar los valores de H, S, V, se generara un cambio en
+        tiempo real del color de la imagen
+      </p>
+      <div class="box">
+        <input class="input" type="text" maxlength="3" />
+        <input class="input" type="text" maxlength="3" />
+        <input class="input" type="text" maxlength="3" />
+      </div>
+      <div class="container_check">
+        <p class="check">H</p>
+        <p class="check">S</p>
+        <p class="check">V</p>
+      </div>
+    </form>
+    <script src="src/Component/HSV/HSV.js"></script>
+  </body>
+</html>

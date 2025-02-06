@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+:root {
+  --gradient: linear-gradient(
+    to right,
+    #2c3e50,
+    #3498db,
+    #e74c3c,
+    #8e44ad,
+    #1abc9c,
+    #f1c40f,
+    #e67e22,
+    #95a5a6,
+    #2c3e50
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2d3436;
+  background: #f8f9fa;
+  background-image: var(--gradient);
+  background-size: 300%;
+  animation: fondo-anim 15s infinite alternate;
+  min-height: 100vh;
+}
+
+@keyframes fondo-anim {
+  0% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: hue-rotate(10deg);
+  }
+}
+.qr-container {
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qr-container .titleG {
+  font-size: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#qrcode {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#qrcode img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.white-square {
+  position: absolute;
+  width: 24%;
+  height: 24%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.qr-logo {
+  width: 70%;
+  height: 70%;
+  filter: brightness(0%) invert(0);
+  object-fit: contain;
+}
+
+.titleG {
+  font-size: 70px;
+  position: absolute;
+  font-weight: 700;
+  top: 0;
+  color: #fff;
+}
+
+/*Value*/
+
+.form {
+  position: absolute;
+  margin-top: 40%;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+}
+
+.form:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  scale: 0.99;
+}
+
+.heading {
+  position: absolute;
+  transform: translate3d(30%, -300%, 0);
+  color: #ccc;
+  font-size: 14px;
+  padding: 10px;
+  top: 3em;
+  font-weight: 700;
+}
+
+.container_check {
+  position: absolute;
+  display: flex;
+  color: white;
+  gap: 70px;
+  font-size: 13px;
+  font-weight: 700;
+  transform: translate3d(250%, -180%, 0);
+}
+
+.box {
+  position: absolute;
+  transform: translate3d(200%, -150%, 0);
+}
+
+.check {
+  position: relative;
+  align-self: center;
+  top: 4em;
+}
+
+.input {
+  position: relative;
+  width: 3em;
+  height: 2.5em;
+  margin: 1em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  box-shadow: inset 3px 3px 6px #d1d1d1, inset -3px -3px 6px #ffffff;
+  top: 6.5em;
+  left: 1.5em;
+  padding-left: 15px;
+  transition: 0.4s ease-in-out;
+}
+
+.input:hover {
+  box-shadow: inset 0px 0px 0px #d1d1d1, inset 0px 0px 0px #ffffff;
+  background-color: lightgrey;
+}
+
+.input:focus {
+  box-shadow: inset 0px 0px 0px #d1d1d1, inset 0px 0px 0px #ffffff;
+  background-color: lightgrey;
+}
