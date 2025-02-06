@@ -11,10 +11,7 @@
       <div id="qrcode"></div>
     </div>
     <form class="form">
-      <p class="heading">
-        Al momento de ingresar los valores de H, S, V, se generara un cambio en
-        tiempo real del color de la imagen
-      </p>
+      <p class="heading">ingresa el H,S,V para cambiar el color de la imagen</p>
       <div class="box">
         <input class="input" type="text" maxlength="3" />
         <input class="input" type="text" maxlength="3" />
@@ -26,6 +23,12 @@
         <p class="check">V</p>
       </div>
     </form>
+    <div class="qr2-container">
+      <p>Escanea para acceder al repositorio en <strong>GITHUB</strong></p>
+      <div id="qr2code"></div>
+    </div>
     <script src="src/Component/HSV/HSV.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="src/Component/QRGenerator/QRGenerator.js"></script>
   </body>
 </html>

@@ -37,6 +37,6 @@ const inputs = document.querySelectorAll(".input");
 inputs.forEach((input) => {
   input.addEventListener("input", () => {
     clearTimeout(timeoutId); // Cancelar el timeout anterior
-    timeoutId = setTimeout(updateFilter, 2000); // Nuevo timeout
+    timeoutId = setTimeout(updateFilter, 1000); // Nuevo timeout
   });
 });
