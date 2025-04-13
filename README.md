@@ -2,6 +2,8 @@
 
 **Una herramienta interactiva para ajustar la saturación, tono y valor de imágenes en tiempo real**
 
+<img src="img/colorestemplate.png">
+
 ---
 
 ## Descripción
