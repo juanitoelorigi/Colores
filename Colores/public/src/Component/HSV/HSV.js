@@ -1,6 +1,6 @@
 function generateIMG() {
   const qrcodeDiv = document.getElementById("qrcode");
-  qrcodeDiv.innerHTML = `<img src="src/img/imgRoom.jpeg">`;
+  qrcodeDiv.innerHTML = `<img src="src/img/imgroom.png">`;
 }
 
 generateIMG();

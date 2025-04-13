@@ -7,21 +7,23 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  left: 0;
+  padding: 0;
 }
 
 :root {
   --gradient: linear-gradient(
     to right,
-    #2c3e50,
-    #3498db,
-    #e74c3c,
-    #8e44ad,
-    #1abc9c,
-    #f1c40f,
-    #3498db,
-    #e74c3c,
-    #8e44ad,
-    #1abc9c
+    #13181d,
+    #0b0e0f,
+    #160c0b,
+    #1b1020,
+    #0d1b19,
+    #18160e,
+    #000000,
+    #301917,
+    #1c1020,
+    #121b1a
   );
 }
 
@@ -36,38 +38,24 @@ body {
   background: #f8f9fa;
   background-image: var(--gradient);
   background-size: 300%;
-  animation: fondo-anim 30s infinite alternate;
   min-height: 100vh;
 }
 
-@keyframes fondo-anim {
-  0% {
-    background-position: 0% 60%;
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 60%;
-    filter: hue-rotate(10deg);
-  }
-}
 .qr-container {
-  position: relative;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.qr-container .titleG {
-  font-size: 70px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.titleG {
+  font-size: 15px;
 }
 
 #qrcode {
-  width: 200px;
-  height: 200px;
-  position: relative;
+  width: 50%;
+  height: 50%;
+
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 #qrcode img {
@@ -99,11 +87,12 @@ body {
 }
 
 .titleG {
-  font-size: 70px;
+  font-size: 27px;
+  padding: 20px;
   position: absolute;
-  font-weight: 700;
   top: 0;
-  color: #fff;
+  left: 0;
+  color: #f0f0f0;
 }
 
 /*Value*/
@@ -127,8 +116,10 @@ body {
 }
 
 .heading {
-  position: absolute;
-  transform: translate3d(100%, -300%, 0);
+  display: flex;
+  text-align: center;
+  align-items: center;
+
   color: #ccc;
   font-size: 14px;
   padding: 10px;
@@ -169,8 +160,10 @@ body {
   box-shadow: inset 3px 3px 6px #d1d1d1, inset -3px -3px 6px #ffffff;
   top: 6.5em;
   left: 1.5em;
-  padding-left: 15px;
+  padding-left: 8px;
   transition: 0.4s ease-in-out;
+  color: #000000;
+  font-weight: 600;
 }
 
 .input:hover {
@@ -202,17 +195,6 @@ body {
 }
 
 #qr2code {
-  width: 220px;
-  height: 220px;
-}
-
-.qr2-logo {
-  position: absolute;
   width: 20%;
   height: 20%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: brightness(0%) invert(0);
-  pointer-events: none;
 }
